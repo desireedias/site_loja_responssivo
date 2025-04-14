@@ -15,11 +15,12 @@
 }
 
 .container{
-    max-width: 100%;
+    width: 100%;
     margin: auto;
+
 }
 
-.container img{
+#imagem-capa{
     width: 100%;
 }
 
@@ -90,17 +91,14 @@ header h1{
 
 #sobre-a-loja p {
     font-family: "Lexend Deca", sans-serif;
-    font-weight: 150;
-    padding: 0 16px;
+    font-weight: 250;
     font-size: 0.8em;
     text-align: justify;
     margin-bottom: 16px;
+    margin: 6px 16px;
+    text-indent: 16px;
 }
 
-#sobre-a-loja{
-    max-width: 90%;
-    margin: auto;
-}
 
 .lista-produtos {
     max-width: 90%;
