@@ -5,23 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EMI croche</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="medias.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu" />
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
     </style>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
         </style>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu" />
+    
 </head>
 <body>
     <header>
-        <div>
+        <div id="cabeçalho">
             <h1>
                 emi
             </h1>
-            <span class="material-symbols-outlined">
-                menu
-            </span>
+            <span class="material-symbols-outlined">menu</span>
         </div>
         <div id="container-flex">
             <nav class="menu">
@@ -44,7 +44,10 @@
     </header>
     <section id="sobre-a-loja">
         <div class="container">
-            <img id="imagem-capa" src="./imagens-site-responssivo-emi/foto-sobrealoja-emi.jpeg" alt="">
+            <picture>
+                <source media="(min-width: 768px)" srcset="./imagens-site-responssivo-emi/foto-sobrealoja-emi-medias.jpeg">
+                <img src="./imagens-site-responssivo-emi/foto-sobrealoja-emi.jpeg" alt="">
+            </picture>
             <div class="texto-sobre-nos">
                 <h2>Expressão artesanal brasileira</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam accusantium ad nisi ex quidem ea iure! Porro, quae. Voluptatum explicabo similique porro cum deleniti doloremque laudantium officiis veritatis nisi tempore.

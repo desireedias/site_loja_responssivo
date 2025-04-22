@@ -1,0 +1,66 @@
+@media screen and (min-width: 768px) {
+
+    header .material-symbols-outlined {/* Adicionando 'header' ao seletor para a regra poder ser aplicada corretamente*/
+        display: none; /* Oculta o ícone de menu hambúrguer em desktop */
+    }
+
+    .menu {
+        display: flex; /* Torna o menu visível e flex container */
+        justify-content: space-between; /* Alinha o menu à direita do header (ou do seu container pai) */
+        background-color: transparent; /* Remove a cor de fundo branca, se não desejada em desktop */
+        width: auto; /* Ajusta a largura do menu ao conteúdo */
+        margin-right: 20px; /* Adiciona margem à direita do menu, se necessário */
+    }
+
+        .menu > ul {
+            display: flex; /* Alinha os itens da lista horizontalmente */
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            align-items: center; /* Alinha verticalmente os itens do menu */
+        }
+
+    .menu li {
+        margin-left: 20px; /* Espaçamento entre os itens do menu */
+        width: auto; /* Remove qualquer largura específica de mobile */
+        margin-bottom: 0; /* Remove a margem inferior de mobile */
+    }
+
+    .menu li a {
+        color: #fff;
+        border-bottom: none;
+    }
+
+    #sobre-a-loja h2{
+        font-size: 2em;
+    }
+
+    #sobre-a-loja p {
+        max-width: 700px;
+        margin: auto;
+        text-align: justify;
+        font-size: 1em;
+    }
+
+    .lista-produtos {
+        display: grid;
+        grid-template-columns: repeat(3, 32.6%);
+        column-gap: 1%;
+    }
+
+    .em-destaque h2,
+    .promos h2{
+        text-align: left;
+        font-size: 1.6em;
+        margin-left: 10px;
+    }
+
+    #contato input{
+        max-width: 40%;
+    }
+
+    .social-links{
+        display: flex;
+        justify-content: center;
+    }
+}
