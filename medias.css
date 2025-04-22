@@ -1,29 +1,29 @@
 @media screen and (min-width: 768px) {
 
     header .material-symbols-outlined {/* Adicionando 'header' ao seletor para a regra poder ser aplicada corretamente*/
-        display: none; /* Oculta o ícone de menu hambúrguer em desktop */
+        display: none; 
     }
 
     .menu {
-        display: flex; /* Torna o menu visível e flex container */
-        justify-content: space-between; /* Alinha o menu à direita do header (ou do seu container pai) */
-        background-color: transparent; /* Remove a cor de fundo branca, se não desejada em desktop */
-        width: auto; /* Ajusta a largura do menu ao conteúdo */
-        margin-right: 20px; /* Adiciona margem à direita do menu, se necessário */
+        display: flex; 
+        justify-content: space-between; 
+        background-color: transparent; 
+        width: auto; 
+        margin-right: 20px; 
     }
 
         .menu > ul {
-            display: flex; /* Alinha os itens da lista horizontalmente */
+            display: flex; 
             list-style-type: none;
             padding: 0;
             margin: 0;
-            align-items: center; /* Alinha verticalmente os itens do menu */
+            align-items: center; 
         }
 
     .menu li {
-        margin-left: 20px; /* Espaçamento entre os itens do menu */
+        margin-left: 20px; 
         width: auto; /* Remove qualquer largura específica de mobile */
-        margin-bottom: 0; /* Remove a margem inferior de mobile */
+        margin-bottom: 0; 
     }
 
     .menu li a {
