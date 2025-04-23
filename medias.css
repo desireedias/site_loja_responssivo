@@ -1,4 +1,7 @@
-@media screen and (min-width: 768px) {
+
+
+
+@media screen and (min-width: 641px) {
 
     header .material-symbols-outlined {/* Adicionando 'header' ao seletor para a regra poder ser aplicada corretamente*/
         display: none; 
@@ -40,19 +43,7 @@
         margin: auto;
         text-align: justify;
         font-size: 1em;
-    }
-
-    .lista-produtos {
-        display: grid;
-        grid-template-columns: repeat(3, 32.6%);
-        column-gap: 1%;
-    }
-
-    .em-destaque h2,
-    .promos h2{
-        text-align: left;
-        font-size: 1.6em;
-        margin-left: 10px;
+        padding: 16px;
     }
 
     #contato input{
@@ -63,4 +54,69 @@
         display: flex;
         justify-content: center;
     }
+}
+
+
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+    
+    #sobre-a-loja picture{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #sobre-a-loja picture img{
+        max-width: 100%;
+        padding: 16px;
+        display: block;
+    }
+    
+    header .material-symbols-outlined {/* Adicionando 'header' ao seletor para a regra poder ser aplicada corretamente*/
+        display: none; 
+    }
+
+    .lista-produtos {
+        display: grid;
+        grid-template-columns: repeat(2, 48.5%);
+        column-gap: 1.5%;
+    }
+}
+
+
+
+@media screen and (min-width: 1024px) {
+
+    .container-flex{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 36px;
+
+    }
+    
+    #sobre-a-loja picture img{
+        max-width: 100%;
+        display: flex;
+        padding: 24px;
+    }
+
+    .texto-sobre-nos{
+        padding: 24px;
+    }
+
+    .lista-produtos {
+        display: grid;
+        grid-template-columns: repeat(4, 23.5%);
+        column-gap: 1%;
+    }
+
+    .em-destaque h2,
+    .promos h2{
+        text-align: left;
+        font-size: 1.6em;
+        margin-left: 10px;
+    }
+
+   
 }
